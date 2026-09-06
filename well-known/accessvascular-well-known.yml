@@ -1,0 +1,59 @@
+generated: '2026-09-06'
+method: probed
+source: >-
+  Live unauthenticated GET of the named /.well-known/ path list against every host Access Vascular,
+  Inc. operates (the apex and www of accessvascularinc.com — the company's only host; there is no API
+  baseURL, no OpenAPI servers[] host and no docs/console host to probe). Every path returned 404.
+  Recorded as an absence: no WellKnown or SecurityTxt pointer is wired in apis.yml, because nothing
+  here is served.
+note: >-
+  The site is hosted on Squarespace. /.well-known/security.txt returns a Squarespace JSON body
+  ({"message":"security.txt not found"}) with HTTP 404; every other /.well-known/ path returns the
+  site's 404 HTML shell with HTTP 404. No 200 was observed on any probed discovery document.
+hosts:
+- host: www.accessvascularinc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: accessvascularinc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
