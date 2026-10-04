@@ -1,5 +1,5 @@
 aid: accessvascular
-name: Access Vascular, Inc.
+name: Access Vascular
 description: >-
   Access Vascular, Inc. is a Billerica, Massachusetts medical device manufacturer that designs and
   builds vascular access catheters from a proprietary hydrophilic biomaterial engineered to retain
@@ -99,3 +99,4 @@ x-coverage:
   - url: https://www.accessvascularinc.com/zz-api-evangelist-control-9f3a
     status: 404
   checked: '2026-09-06'
+x-legal-name: Access Vascular, Inc.
